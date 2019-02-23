@@ -19,7 +19,7 @@ It provides following functionality:
 
 8) User can drag and drop both text and image objects by selecting the border of the object.
 
-9) User can add a new slide by clicking on add button
+9) User can add a new slide by clicking on add button.
 
 10) User can present the current slide on click of present button
 
