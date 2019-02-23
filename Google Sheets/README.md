@@ -1,4 +1,4 @@
-# extra-credit-assignment-ppt-kshitiz11193
+# Google Sheets
 This tool facilitate user to create presentation
 
 It provides following functionality:
