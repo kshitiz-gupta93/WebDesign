@@ -1,0 +1,61 @@
+<html>
+
+<head>
+
+  <link href="./style/presentation.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+
+
+<body>
+
+
+  <div class="row1"> <i class="material-icons google-icon-fix">description</i> <span>Presentation</span> <button id="presentation"
+      class="present-button"><i class="material-icons icon-row1">play_arrow </i><span class="font-button">Present</span></button></div>
+
+  <div class="row2">
+    <div class="buttonsStyle">
+      <i class="material-icons icon-row2 addButton" id="add">add</i>
+      <i id="text" class="material-icons icon-row2">text_fields</i>
+
+      <p class="inline"><input type="file" accept="image/*" name="image" id="file" style="display: none;"></p>
+      <p class="inline"><label for="file" style="cursor: pointer;"><i class="material-icons icon-row2">image</i>
+        </label></p>
+
+
+    </div>
+    <div id="cont" class="container">
+
+      <div id="slideBar" class="slideBar">
+
+        <div id="1" class="slideNo">1</div>
+      </div>
+      <div id="canvas" class="clearfix toggleDiv">
+
+      </div>
+
+    </div>
+
+
+    <script>
+
+
+      var loadFile = function (event) {
+        alert(URL.createObjectURL(event.target.files[0]));
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+      };
+
+
+    </script>
+
+    <script src="//cdn.ckeditor.com/4.10.1/full/ckeditor.js"></script>
+    <script src="./dist/main.js"></script>
+
+
+</body>
+
+</html>

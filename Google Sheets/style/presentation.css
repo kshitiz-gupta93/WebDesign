@@ -1,0 +1,348 @@
+.canvas
+{
+  height: 600px;
+  border: 1px solid #E4E4E4;
+  float: left;
+  background-color: white;
+  /* margin-left: 200px;
+  margin-right: 100px; */
+  width: 81%;
+  display: none;
+
+}
+
+.slideNo
+{
+  border: 1px solid black;
+  height: 100px;
+  margin: 20;
+  background-color: white;
+
+}
+
+.slideBar
+{
+
+  display: block;
+    
+    background-color: #EEEE;
+    width: 142px;
+    float: left;
+    /* border: 1px solid black; */
+    height: 600px;
+    overflow: scroll;
+}
+
+img
+{
+  height: 93%;
+  width: 100%;
+}
+
+.inline
+{
+  display: inline;
+}
+
+.icon-row2
+{
+
+  font-size:20px;
+  color:#7676;
+}
+
+.font-button
+{
+  font-size: 20px;
+  font-family: "Comic Sans MS";
+}
+
+.icon-row1
+{
+
+  font-size:30px;
+  color:#7676;
+  display: inline-flex !important;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+.present-button
+{
+  margin-top: 9px;
+  padding-top: 5px;
+  float: right;
+  background-color: #F5F5F5;
+}
+
+.google-icon-fix
+{
+
+  display: inline-flex !important;
+  vertical-align: middle;
+  font-size:48px !important;
+  color:#FBB912;
+}
+
+.draggable
+{
+height: 7%;
+cursor: move;
+
+}
+
+i:hover{
+
+  background-color: #E0E0E0;
+}
+
+.row1
+{
+
+font-size: 20px;
+font-family: "Comic Sans MS";
+margin-left: 0px;
+margin-right: 130px;
+padding: 20px;
+}
+.buttonsStyle
+{
+  margin-left: 21px;
+}
+
+.addButton
+{
+margin-right: 95px;
+
+}
+p{
+
+ margin: 0; 
+}
+#editor1{
+
+  font-size: 30px;
+}
+
+.title
+{
+
+  width: 544px !important; 
+  height: 67px !important;
+   left: 443px !important; 
+   top: 181px !important;
+
+}
+
+.row2
+{
+
+font-size: 20px;
+/* font-family: "Comic Sans MS"; */
+border: 1px solid #E4E4E4;
+
+}
+
+
+#canvas{
+
+height: 600px;
+border: 1px solid #E4E4E4;
+float: left;
+background-color: white;
+/* margin-left: 200px;
+margin-right: 100px; */
+width: 81%;
+}
+
+
+.textBox
+{
+outline: none;
+height: 100%;
+
+}
+
+.textBox:focus
+{
+  
+
+}
+
+.clearfix::after
+{
+
+content: "";
+clear: both;
+display: table;
+
+}
+
+.container{
+
+background-color: #EEEEEE;
+padding-top: 20px;
+height: 600px;
+padding-top: 20px;
+
+}
+
+#toolbar-container
+{
+
+display: none;
+
+}
+
+html {
+    height: 100%;
+  }
+  body {
+    margin: 0;
+    height: 100%;
+  }
+  
+  /* Tell Quill not to scroll */
+  #quill-container {
+    height: auto;
+    min-height: 100%;
+    padding: 50px;
+  }
+  #quill-container .ql-editor {
+    font-size: 18px;
+    overflow-y: visible; 
+  }
+  
+  /* Specify our own scrolling container */
+  #scrolling-container {
+    height: 100%;
+    min-height: 100%;
+    overflow-y: auto;
+  }
+#editor {
+    height: 375px;
+  }
+  
+  .ql-omega:after {
+    content: "Ω";
+  }
+
+
+body,
+html {
+  background: white;
+}
+
+.textField{
+  margin: 20px;
+  
+}
+.resizable {
+  background-color: rgba(0,0,0,0);
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
+
+
+.resizable .resizers{
+  width: 100%;
+  height: 100%;
+  border: 3px dotted #E4E4E4;
+  box-sizing: border-box;
+}
+
+.resizable .resizers .resizer{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /*magic to turn square into circle*/
+  background: white;
+  border: 3px solid #E4E4E4;
+  position: absolute;
+}
+
+.resizable:focus-within .resizers{
+  width: 100%;
+  height: 100%;
+  border: 3px dotted black;
+  box-sizing: border-box;
+}
+
+.resizable .resizers:focus-within .resizer{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; /*magic to turn square into circle*/
+  background: white;
+  border: 3px solid black;
+  position: absolute;
+}
+
+
+
+
+.resizable .resizers .resizer.top-left {
+  left: -5px;
+  top: -5px;
+  cursor: nwse-resize; /*resizer cursor*/
+}
+.resizable .resizers .resizer.top-right {
+  right: -5px;
+  top: -5px;
+  cursor: nesw-resize;
+}
+.resizable .resizers .resizer.bottom-left {
+  left: -5px;
+  bottom: -5px;
+  cursor: nesw-resize;
+}
+.resizable .resizers .resizer.bottom-right {
+  right: -5px;
+  bottom: -5px;
+  cursor: nwse-resize;
+}
+
+
+
+/* slideshow */
+
+/*
+essential styles:
+these make the slideshow work
+*/
+#slides{
+	position: relative;
+	height: 150px;
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+.slide{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.showing{
+	opacity: 1;
+	z-index: 2;
+}
+
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
